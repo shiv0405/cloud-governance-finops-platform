@@ -34,6 +34,8 @@ def normalize_outputs(raw: dict[str, Any]) -> dict[str, Any]:
 
 def build_report(outputs: dict[str, Any]) -> dict[str, Any]:
     bucket_name = outputs.get("bucket_name")
+    bucket_arn = outputs.get("bucket_arn")
+    aws_region = outputs.get("aws_region")
     resources: list[dict[str, Any]] = []
 
     if bucket_name:
@@ -41,6 +43,8 @@ def build_report(outputs: dict[str, Any]) -> dict[str, Any]:
             {
                 "type": "aws_s3_bucket",
                 "name": bucket_name,
+                "arn": bucket_arn,
+                "region": aws_region,
                 "role": "artifact-storage",
             }
         )
@@ -61,27 +65,40 @@ def main() -> int:
     )
     parser.add_argument(
         "--terraform-output",
-        help="Optional path to a saved `terraform output -json` file.",
+        dest="terraform_output",
+        help="Path to a saved `terraform output -json` file. If omitted, terraform is invoked directly.",
+    )
+    parser.add_argument(
+        "--out",
+        help="Optional path to write the rendered JSON report. Defaults to stdout.",
     )
     args = parser.parse_args()
 
     try:
-        raw = load_terraform_output(args.terraform_output)
-        outputs = normalize_outputs(raw)
+        raw_outputs = load_terraform_output(args.terraform_output)
+        outputs = normalize_outputs(raw_outputs)
         report = build_report(outputs)
     except FileNotFoundError as exc:
-        print(f"error: file not found: {exc}", file=sys.stderr)
+        print(f"error: unable to read terraform output file: {exc}", file=sys.stderr)
         return 1
     except subprocess.CalledProcessError as exc:
         print("error: failed to run `terraform output -json`", file=sys.stderr)
         if exc.stderr:
             print(exc.stderr.strip(), file=sys.stderr)
-        return 2
+        return 1
     except json.JSONDecodeError as exc:
         print(f"error: invalid JSON input: {exc}", file=sys.stderr)
-        return 3
+        return 1
 
-    print(json.dumps(report, indent=2))
+    rendered = json.dumps(report, indent=2)
+
+    if args.out:
+        out_path = Path(args.out)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(rendered + "\n", encoding="utf-8")
+    else:
+        print(rendered)
+
     return 0
 
 
