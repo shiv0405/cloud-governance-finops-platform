@@ -1,0 +1,6 @@
+project_name        = "infra-reporting"
+environment         = "prod"
+aws_region          = "eu-central-1"
+owner               = "platform-engineering"
+schedule_expression = "cron(0 6 * * ? *)"
+report_prefix       = "reports"

@@ -1,0 +1,127 @@
+{
+  "portfolio_summary": {
+    "accounts": 24,
+    "critical_accounts": 12,
+    "elevated_accounts": 9,
+    "current_month_spend_usd": 2179324.09
+  },
+  "top_accounts": [
+    {
+      "account_id": 100000000016,
+      "account_name": "business-unit-17",
+      "risk_score": 193.2,
+      "risk_band": "critical",
+      "current_month_spend_usd": 101281.6,
+      "spend_growth_pct": -5.58
+    },
+    {
+      "account_id": 100000000009,
+      "account_name": "business-unit-10",
+      "risk_score": 187.7,
+      "risk_band": "critical",
+      "current_month_spend_usd": 77622.48999999999,
+      "spend_growth_pct": -4.15
+    },
+    {
+      "account_id": 100000000019,
+      "account_name": "business-unit-20",
+      "risk_score": 174.3,
+      "risk_band": "critical",
+      "current_month_spend_usd": 134766.28,
+      "spend_growth_pct": 20.29
+    },
+    {
+      "account_id": 100000000023,
+      "account_name": "business-unit-24",
+      "risk_score": 169.48,
+      "risk_band": "critical",
+      "current_month_spend_usd": 153955.35,
+      "spend_growth_pct": 19.83
+    },
+    {
+      "account_id": 100000000018,
+      "account_name": "business-unit-19",
+      "risk_score": 155.4,
+      "risk_band": "critical",
+      "current_month_spend_usd": 122960.17,
+      "spend_growth_pct": -5.2
+    },
+    {
+      "account_id": 100000000012,
+      "account_name": "business-unit-13",
+      "risk_score": 153.2,
+      "risk_band": "critical",
+      "current_month_spend_usd": 84703.34,
+      "spend_growth_pct": -5.6
+    },
+    {
+      "account_id": 100000000007,
+      "account_name": "business-unit-08",
+      "risk_score": 131.34,
+      "risk_band": "critical",
+      "current_month_spend_usd": 77333.27,
+      "spend_growth_pct": 19.92
+    },
+    {
+      "account_id": 100000000022,
+      "account_name": "business-unit-23",
+      "risk_score": 119.2,
+      "risk_band": "critical",
+      "current_month_spend_usd": 139558.91,
+      "spend_growth_pct": -6.47
+    },
+    {
+      "account_id": 100000000004,
+      "account_name": "business-unit-05",
+      "risk_score": 114.4,
+      "risk_band": "critical",
+      "current_month_spend_usd": 52156.97,
+      "spend_growth_pct": -4.37
+    },
+    {
+      "account_id": 100000000015,
+      "account_name": "business-unit-16",
+      "risk_score": 111.22,
+      "risk_band": "critical",
+      "current_month_spend_usd": 115583.97,
+      "spend_growth_pct": 18.74
+    }
+  ],
+  "finding_breakdown": [
+    {
+      "finding_type": "tagging_gap",
+      "severity": "medium",
+      "count": 237
+    },
+    {
+      "finding_type": "idle_compute",
+      "severity": "medium",
+      "count": 180
+    },
+    {
+      "finding_type": "missing_backup",
+      "severity": "medium",
+      "count": 120
+    },
+    {
+      "finding_type": "encryption_gap",
+      "severity": "high",
+      "count": 102
+    },
+    {
+      "finding_type": "public_access",
+      "severity": "critical",
+      "count": 65
+    },
+    {
+      "finding_type": "logging_gap",
+      "severity": "high",
+      "count": 8
+    },
+    {
+      "finding_type": "root_mfa_disabled",
+      "severity": "high",
+      "count": 8
+    }
+  ]
+}

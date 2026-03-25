@@ -1,67 +1,51 @@
 # infra-reporting-starter
 
-![Terraform](https://img.shields.io/badge/Terraform-1.7-blue)
-![Template](https://img.shields.io/badge/Template-AWS-gold)
-![License](https://img.shields.io/badge/License-APACHE-2.0-brightgreen)
+Production-friendly AWS governance and FinOps reporting accelerator. This project combines Terraform infrastructure for a reporting foundation with Python tooling that generates multi-account sample telemetry, computes governance scorecards, and exports executive-ready reporting artifacts.
 
-Terraform-first AWS starter with deployment notes and reporting hooks.
+## Highlights
 
-## Overview
+- Terraform foundation for an S3 reporting lake, Athena workgroup, Glue catalog, KMS encryption, and scheduled Lambda processing
+- Synthetic multi-account AWS inventory, cost, and security datasets for realistic portfolio demos
+- Reporting pipeline that produces account scorecards, prioritized findings, and an executive HTML summary
+- Strong fit for senior cloud, platform, FinOps, and governance-focused roles
 
-This AWS starter focuses on transparent infrastructure examples that are easy to review in a portfolio. It includes a small Terraform footprint, configurable inputs, and a lightweight reporting path for post-deploy inventory.
+## Project Layout
 
-Current infrastructure defaults include:
-
-- an S3 bucket for project artifacts or report exports
-- bucket versioning for safer retention
-- server-side encryption with SSE-S3
-- public access blocking to avoid accidental exposure
+- `terraform/` contains the AWS reporting foundation
+- `lambda/` contains the scheduled reporting Lambda handler
+- `src/infra_reporting_starter/` contains the Python package and CLI
+- `data/raw/` stores the generated sample datasets
+- `reports/` stores generated scorecards and summaries
 
 ## Quick Start
 
 ```bash
-cp terraform.tfvars.example terraform.tfvars
-terraform init
-terraform validate
-terraform plan
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
+python -m infra_reporting_starter.cli run-all --accounts 24 --months 12 --resources-per-account 120
 ```
 
-## Included Starter Assets
+## Outputs
 
-- `main.tf` provisions a tagged S3 bucket with safer default controls.
-- `variables.tf` centralizes the environment inputs.
-- `outputs.tf` exposes bucket metadata for reporting and automation.
-- `scripts/render_inventory.py` emits a simple JSON inventory summary.
+After `run-all`, the project writes:
 
-## Reporting Workflow
+- `data/raw/aws_inventory_snapshot.csv`
+- `data/raw/aws_cost_usage.csv`
+- `data/raw/security_findings.csv`
+- `reports/account_scorecard.csv`
+- `reports/findings_summary.json`
+- `reports/executive_summary.html`
 
-Generate Terraform outputs and build a machine-readable report:
+## Terraform Foundation
 
-```bash
-terraform output -json > tf-output.json
-python scripts/report_hook.py --terraform-output tf-output.json --out reports/infra-report.json
-cat reports/infra-report.json
-```
+The Terraform stack provisions:
 
-You can also run the helper directly in an initialized Terraform working directory:
-
-```bash
-python scripts/report_hook.py
-```
-
-## Deployment Notes
-
-1. Copy `terraform.tfvars.example` to `terraform.tfvars` and adjust values.
-2. Run `terraform init`, `terraform validate`, and `terraform plan`.
-3. Apply when ready with `terraform apply`.
-4. Export outputs and archive the generated report as a CI artifact or operations note.
+- encrypted S3 storage for reporting artifacts
+- Athena and Glue components for ad hoc analysis
+- a scheduled Lambda function for report orchestration
+- CloudWatch logging and KMS-backed encryption defaults
 
 ## Automation Disclosure
 
 **Note:** This repository uses automation and AI assistance for planning, initial scaffolding, routine maintenance, and selected code or documentation generation. I review and curate the outputs as part of my portfolio workflow.
-
-## Additional Starter Assets
-
-- `scripts/report_hook.py` reads Terraform outputs and produces a small infrastructure report payload for CI, ops notes, or inventory handoff.
-- `docs/architecture.md` explains the current AWS layout, deployment flow, and low-risk extension points.
-- `terraform.tfvars.example` provides a copy-ready local configuration example.

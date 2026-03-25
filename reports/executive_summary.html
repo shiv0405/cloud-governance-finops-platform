@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AWS Governance Executive Summary</title>
+  <style>
+    body { margin: 0; padding: 28px; background: #f2f4f8; color: #16212b; font-family: "Segoe UI", sans-serif; }
+    .hero, .panel { background: #ffffff; border-radius: 24px; padding: 24px; margin-bottom: 18px; box-shadow: 0 16px 40px rgba(22, 33, 43, 0.08); }
+    .cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .card { background: #eef4fb; border-radius: 18px; padding: 16px; }
+    .card span { display: block; font-size: 12px; color: #5f7081; text-transform: uppercase; margin-bottom: 6px; }
+    .card strong { font-size: 30px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px; border-bottom: 1px solid #e8edf4; }
+    .kicker { text-transform: uppercase; letter-spacing: 0.12em; color: #9c5a18; font-weight: 700; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="kicker">AWS Governance and FinOps</div>
+    <h1>Infra Reporting Executive Summary</h1>
+    <p>Multi-account reporting view for cost posture, governance drift, and remediation priority.</p>
+    <div class="cards"><div class='card'><span>Accounts</span><strong>24</strong></div><div class='card'><span>Critical</span><strong>12</strong></div><div class='card'><span>Elevated</span><strong>9</strong></div><div class='card'><span>Current Spend</span><strong>$2,179,324</strong></div></div>
+  </section>
+  <section class="panel">
+    <h2>Highest-Risk Accounts</h2>
+    <table>
+      <thead><tr><th>Account</th><th>Band</th><th>Risk Score</th><th>Current Spend</th><th>Spend Growth</th></tr></thead>
+      <tbody><tr><td>business-unit-17</td><td>critical</td><td>193.2</td><td>$101,282</td><td>-5.58%</td></tr><tr><td>business-unit-10</td><td>critical</td><td>187.7</td><td>$77,622</td><td>-4.15%</td></tr><tr><td>business-unit-20</td><td>critical</td><td>174.3</td><td>$134,766</td><td>20.29%</td></tr><tr><td>business-unit-24</td><td>critical</td><td>169.48</td><td>$153,955</td><td>19.83%</td></tr><tr><td>business-unit-19</td><td>critical</td><td>155.4</td><td>$122,960</td><td>-5.2%</td></tr><tr><td>business-unit-13</td><td>critical</td><td>153.2</td><td>$84,703</td><td>-5.6%</td></tr><tr><td>business-unit-08</td><td>critical</td><td>131.34</td><td>$77,333</td><td>19.92%</td></tr><tr><td>business-unit-23</td><td>critical</td><td>119.2</td><td>$139,559</td><td>-6.47%</td></tr><tr><td>business-unit-05</td><td>critical</td><td>114.4</td><td>$52,157</td><td>-4.37%</td></tr><tr><td>business-unit-16</td><td>critical</td><td>111.22</td><td>$115,584</td><td>18.74%</td></tr><tr><td>business-unit-18</td><td>critical</td><td>98.1</td><td>$111,458</td><td>-5.17%</td></tr><tr><td>business-unit-12</td><td>critical</td><td>91.84</td><td>$96,266</td><td>19.48%</td></tr></tbody>
+    </table>
+  </section>
+  <section class="panel">
+    <h2>Finding Breakdown</h2>
+    <table>
+      <thead><tr><th>Finding Type</th><th>Severity</th><th>Count</th></tr></thead>
+      <tbody><tr><td>tagging_gap</td><td>medium</td><td>237</td></tr><tr><td>idle_compute</td><td>medium</td><td>180</td></tr><tr><td>missing_backup</td><td>medium</td><td>120</td></tr><tr><td>encryption_gap</td><td>high</td><td>102</td></tr><tr><td>public_access</td><td>critical</td><td>65</td></tr><tr><td>logging_gap</td><td>high</td><td>8</td></tr><tr><td>root_mfa_disabled</td><td>high</td><td>8</td></tr></tbody>
+    </table>
+  </section>
+</body>
+</html>

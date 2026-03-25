@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infra-reporting-starter"
+version = "0.1.0"
+description = "AWS governance and FinOps reporting accelerator with Terraform and Python reporting tools."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.0",
+]
+
+[project.scripts]
+infra-reporting-starter = "infra_reporting_starter.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
