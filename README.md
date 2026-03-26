@@ -1,13 +1,13 @@
 # Cloud Governance and FinOps Platform
 
-Production-oriented AWS governance and FinOps analytics project built for leadership review, platform decision-making, and portfolio-quality cloud discussions. It combines Terraform infrastructure, synthetic multi-account telemetry, account-level scorecards, remediation recommendations, and executive reporting into one cohesive operating model.
+Production-oriented AWS governance and FinOps analytics project for cloud visibility, remediation planning, and reporting. It combines Terraform infrastructure, synthetic multi-account telemetry, account-level scorecards, remediation recommendations, and executive reporting into one cohesive operating model.
 
-## Why This Project Works For Senior Roles
+## Overview
 
 - Moves beyond infrastructure provisioning into governance, cost posture, and operating accountability
 - Produces actionable outputs for platform, security, and FinOps stakeholders
-- Includes a realistic multi-account dataset with cost, utilization, tagging, backup, encryption, and exposure signals
-- Gives you both technical implementation depth and executive communication assets
+- Includes a multi-account dataset with cost, utilization, tagging, backup, encryption, and exposure signals
+- Combines infrastructure, reporting, and remediation planning in one workflow
 
 ## Core Capabilities
 
