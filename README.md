@@ -1,4 +1,4 @@
-# infra-reporting-starter
+# Cloud Governance and FinOps Intelligence
 
 Production-friendly AWS governance and FinOps reporting accelerator. This project combines Terraform infrastructure for a reporting foundation with Python tooling that generates multi-account sample telemetry, computes governance scorecards, and exports executive-ready reporting artifacts.
 
