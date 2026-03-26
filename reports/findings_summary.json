@@ -3,7 +3,8 @@
     "accounts": 24,
     "critical_accounts": 12,
     "elevated_accounts": 9,
-    "current_month_spend_usd": 2179324.09
+    "current_month_spend_usd": 2179324.09,
+    "estimated_monthly_savings_usd": 136852.44
   },
   "top_accounts": [
     {
@@ -12,7 +13,8 @@
       "risk_score": 193.2,
       "risk_band": "critical",
       "current_month_spend_usd": 101281.6,
-      "spend_growth_pct": -5.58
+      "spend_growth_pct": -5.58,
+      "estimated_monthly_savings_usd": 6307.9
     },
     {
       "account_id": 100000000009,
@@ -20,7 +22,8 @@
       "risk_score": 187.7,
       "risk_band": "critical",
       "current_month_spend_usd": 77622.48999999999,
-      "spend_growth_pct": -4.15
+      "spend_growth_pct": -4.15,
+      "estimated_monthly_savings_usd": 4999.35
     },
     {
       "account_id": 100000000019,
@@ -28,7 +31,8 @@
       "risk_score": 174.3,
       "risk_band": "critical",
       "current_month_spend_usd": 134766.28,
-      "spend_growth_pct": 20.29
+      "spend_growth_pct": 20.29,
+      "estimated_monthly_savings_usd": 8307.98
     },
     {
       "account_id": 100000000023,
@@ -36,7 +40,8 @@
       "risk_score": 169.48,
       "risk_band": "critical",
       "current_month_spend_usd": 153955.35,
-      "spend_growth_pct": 19.83
+      "spend_growth_pct": 19.83,
+      "estimated_monthly_savings_usd": 9543.32
     },
     {
       "account_id": 100000000018,
@@ -44,7 +49,8 @@
       "risk_score": 155.4,
       "risk_band": "critical",
       "current_month_spend_usd": 122960.17,
-      "spend_growth_pct": -5.2
+      "spend_growth_pct": -5.2,
+      "estimated_monthly_savings_usd": 7659.61
     },
     {
       "account_id": 100000000012,
@@ -52,7 +58,8 @@
       "risk_score": 153.2,
       "risk_band": "critical",
       "current_month_spend_usd": 84703.34,
-      "spend_growth_pct": -5.6
+      "spend_growth_pct": -5.6,
+      "estimated_monthly_savings_usd": 5340.2
     },
     {
       "account_id": 100000000007,
@@ -60,7 +67,8 @@
       "risk_score": 131.34,
       "risk_band": "critical",
       "current_month_spend_usd": 77333.27,
-      "spend_growth_pct": 19.92
+      "spend_growth_pct": 19.92,
+      "estimated_monthly_savings_usd": 4925.0
     },
     {
       "account_id": 100000000022,
@@ -68,7 +76,8 @@
       "risk_score": 119.2,
       "risk_band": "critical",
       "current_month_spend_usd": 139558.91,
-      "spend_growth_pct": -6.47
+      "spend_growth_pct": -6.47,
+      "estimated_monthly_savings_usd": 8616.53
     },
     {
       "account_id": 100000000004,
@@ -76,7 +85,8 @@
       "risk_score": 114.4,
       "risk_band": "critical",
       "current_month_spend_usd": 52156.97,
-      "spend_growth_pct": -4.37
+      "spend_growth_pct": -4.37,
+      "estimated_monthly_savings_usd": 3405.42
     },
     {
       "account_id": 100000000015,
@@ -84,7 +94,8 @@
       "risk_score": 111.22,
       "risk_band": "critical",
       "current_month_spend_usd": 115583.97,
-      "spend_growth_pct": 18.74
+      "spend_growth_pct": 18.74,
+      "estimated_monthly_savings_usd": 7169.04
     }
   ],
   "finding_breakdown": [

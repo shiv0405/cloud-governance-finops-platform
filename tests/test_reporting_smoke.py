@@ -24,4 +24,7 @@ def test_reporting_pipeline_generates_outputs(tmp_path: Path) -> None:
 
     assert result["accounts"] == 8
     assert Path(result["reports"]["scorecard_path"]).exists()
+    assert Path(result["reports"]["portfolio_kpis_path"]).exists()
+    assert Path(result["reports"]["recommendations_path"]).exists()
+    assert Path(result["reports"]["executive_brief_path"]).exists()
     assert Path(result["reports"]["executive_html_path"]).exists()

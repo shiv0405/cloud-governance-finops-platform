@@ -3,12 +3,15 @@
 ## Local Reporting Flow
 
 1. Generate sample inputs:
-   `python -m infra_reporting_starter.cli generate-data --accounts 24 --months 12 --resources-per-account 120`
+   `cloud-governance-finops-platform generate-data --accounts 24 --months 12 --resources-per-account 120`
 2. Build the reports:
-   `python -m infra_reporting_starter.cli build-report`
+   `cloud-governance-finops-platform build-report`
 3. Review:
    - `reports/account_scorecard.csv`
    - `reports/findings_summary.json`
+   - `reports/portfolio_kpis.json`
+   - `reports/remediation_recommendations.csv`
+   - `reports/executive_brief.md`
    - `reports/executive_summary.html`
 
 ## Terraform Flow

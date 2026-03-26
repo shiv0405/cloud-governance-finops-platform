@@ -1,0 +1,16 @@
+account_id,account_name,risk_band,maturity_band,risk_score,current_month_spend_usd,estimated_monthly_savings_usd,owner_team,recommended_action
+100000000016,business-unit-17,critical,reactive,193.2,101281.6,6307.9,Security Engineering,Run executive security review and assign remediation owners within the current sprint.
+100000000009,business-unit-10,critical,reactive,187.7,77622.48999999999,4999.35,Security Engineering,Run executive security review and assign remediation owners within the current sprint.
+100000000019,business-unit-20,critical,reactive,174.3,134766.28,8307.98,Security Engineering,Run executive security review and assign remediation owners within the current sprint.
+100000000023,business-unit-24,critical,reactive,169.48,153955.35,9543.32,FinOps,Prioritize public exposure remediation and edge configuration review.
+100000000018,business-unit-19,critical,reactive,155.4,122960.17,7659.61,Security Engineering,Run executive security review and assign remediation owners within the current sprint.
+100000000012,business-unit-13,critical,reactive,153.2,84703.34,5340.2,FinOps,Enforce tagging policy and automate ownership remediation across shared services.
+100000000007,business-unit-08,critical,reactive,131.34,77333.27,4925.0,Cloud Platform,Prioritize public exposure remediation and edge configuration review.
+100000000022,business-unit-23,critical,reactive,119.2,139558.91,8616.53,FinOps,Prioritize public exposure remediation and edge configuration review.
+100000000004,business-unit-05,critical,reactive,114.4,52156.97,3405.42,Cloud Platform,Prioritize public exposure remediation and edge configuration review.
+100000000015,business-unit-16,critical,reactive,111.22,115583.97,7169.04,FinOps,Enforce tagging policy and automate ownership remediation across shared services.
+100000000017,business-unit-18,critical,reactive,98.1,111457.51,6930.45,FinOps,Enforce tagging policy and automate ownership remediation across shared services.
+100000000011,business-unit-12,critical,reactive,91.84,96265.85,6018.95,FinOps,Expand backup coverage and test restoration paths for critical data services.
+100000000021,business-unit-22,elevated,reactive,86.2,129138.54000000001,7997.31,FinOps,Prioritize public exposure remediation and edge configuration review.
+100000000003,business-unit-04,elevated,reactive,84.75,56877.54,3670.65,Cloud Platform,Prioritize public exposure remediation and edge configuration review.
+100000000002,business-unit-03,elevated,reactive,77.1,50079.71,3250.78,Cloud Platform,Enforce tagging policy and automate ownership remediation across shared services.

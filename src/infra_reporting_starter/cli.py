@@ -9,7 +9,7 @@ from .sample_data import generate_sample_inputs, write_inputs
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="AWS infra reporting starter CLI")
+    parser = argparse.ArgumentParser(description="Cloud governance and FinOps platform CLI")
     parser.add_argument("--project-root", default=".", help="Project root containing data/, reports/, and terraform/")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
