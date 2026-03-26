@@ -9,6 +9,12 @@ Production-oriented AWS governance and FinOps analytics project for cloud visibi
 - Includes a multi-account dataset with cost, utilization, tagging, backup, encryption, and exposure signals
 - Combines infrastructure, reporting, and remediation planning in one workflow
 
+## Visual Outputs
+
+![Cloud governance overview](docs/images/overview.svg)
+
+![Cloud governance highlights](docs/images/highlights.svg)
+
 ## Core Capabilities
 
 - Terraform foundation for a reporting lake, Athena workgroup, Glue catalog, encryption, and scheduled processing

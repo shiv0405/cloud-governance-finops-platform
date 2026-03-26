@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-label="Top Savings Opportunities">
+  <rect width="1280" height="760" fill="#f5fbf7"/>
+  <rect x="40" y="36" width="1200" height="120" rx="28" fill="#ffffff" stroke="#d9ecdf" stroke-width="2"/>
+  <text x="74" y="92" fill="#10241a" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Top Savings Opportunities</text>
+  <text x="74" y="128" fill="#5b6c62" font-size="19" font-family="Segoe UI, Arial, sans-serif">Estimated monthly savings by account from the latest scorecard</text>
+  
+  <text x="120" y="214" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">business-unit-24</text>
+  <rect x="440" y="192" width="620" height="28" rx="14" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1"/>
+  <rect x="440" y="192" width="620.0" height="28" rx="14" fill="#16a34a"/>
+  <text x="1078" y="214" fill="#166534" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$9.5K</text>
+
+  <text x="120" y="286" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">business-unit-23</text>
+  <rect x="440" y="264" width="620" height="28" rx="14" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1"/>
+  <rect x="440" y="264" width="559.8" height="28" rx="14" fill="#16a34a"/>
+  <text x="1078" y="286" fill="#166534" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$8.6K</text>
+
+  <text x="120" y="358" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">business-unit-20</text>
+  <rect x="440" y="336" width="620" height="28" rx="14" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1"/>
+  <rect x="440" y="336" width="539.7" height="28" rx="14" fill="#16a34a"/>
+  <text x="1078" y="358" fill="#166534" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$8.3K</text>
+
+  <text x="120" y="430" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">business-unit-22</text>
+  <rect x="440" y="408" width="620" height="28" rx="14" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1"/>
+  <rect x="440" y="408" width="519.6" height="28" rx="14" fill="#16a34a"/>
+  <text x="1078" y="430" fill="#166534" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$8.0K</text>
+
+  <text x="120" y="502" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">business-unit-19</text>
+  <rect x="440" y="480" width="620" height="28" rx="14" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1"/>
+  <rect x="440" y="480" width="497.6" height="28" rx="14" fill="#16a34a"/>
+  <text x="1078" y="502" fill="#166534" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$7.7K</text>
+
+  <text x="120" y="574" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">business-unit-16</text>
+  <rect x="440" y="552" width="620" height="28" rx="14" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1"/>
+  <rect x="440" y="552" width="465.8" height="28" rx="14" fill="#16a34a"/>
+  <text x="1078" y="574" fill="#166534" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$7.2K</text>
+
+  <rect x="74" y="646" width="1132" height="72" rx="24" fill="#ffffff" stroke="#d9ecdf" stroke-width="1.5"/>
+  <text x="100" y="692" fill="#5b6c62" font-size="18" font-family="Segoe UI, Arial, sans-serif">These accounts combine material spend with optimization headroom, making them strong candidates for a FinOps review queue.</text>
+</svg>

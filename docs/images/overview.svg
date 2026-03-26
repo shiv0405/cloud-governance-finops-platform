@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-label="Cloud Governance and FinOps Platform">
+  <rect width="1280" height="760" fill="#f5fbf7"/>
+  <rect x="40" y="36" width="1200" height="150" rx="28" fill="#166534"/>
+  <circle cx="1140" cy="92" r="54" fill="#16a34a" opacity="0.18"/>
+  <circle cx="1188" cy="146" r="34" fill="#0f766e" opacity="0.18"/>
+  <text x="72" y="92" fill="#ffffff" font-size="36" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Cloud Governance and FinOps Platform</text>
+  <text x="72" y="132" fill="#e5f2ff" font-size="19" font-family="Segoe UI, Arial, sans-serif">Governance drift, savings opportunity, and multi-account operating scorecards.</text>
+  
+  <rect x="56" y="214" width="260" height="126" rx="24" fill="#ffffff" stroke="#d9ecdf" stroke-width="2"/>
+  <text x="84" y="256" fill="#5b6c62" font-size="18" font-family="Segoe UI, Arial, sans-serif">Accounts</text>
+  <text x="84" y="296" fill="#10241a" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">24</text>
+  <text x="84" y="322" fill="#166534" font-size="15" font-family="Segoe UI, Arial, sans-serif">Multi-account scope</text>
+
+  <rect x="344" y="214" width="260" height="126" rx="24" fill="#ffffff" stroke="#d9ecdf" stroke-width="2"/>
+  <text x="372" y="256" fill="#5b6c62" font-size="18" font-family="Segoe UI, Arial, sans-serif">Critical share</text>
+  <text x="372" y="296" fill="#10241a" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">50.0%</text>
+  <text x="372" y="322" fill="#166534" font-size="15" font-family="Segoe UI, Arial, sans-serif">Accounts in critical band</text>
+
+  <rect x="632" y="214" width="260" height="126" rx="24" fill="#ffffff" stroke="#d9ecdf" stroke-width="2"/>
+  <text x="660" y="256" fill="#5b6c62" font-size="18" font-family="Segoe UI, Arial, sans-serif">Monthly savings</text>
+  <text x="660" y="296" fill="#10241a" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$136.9K</text>
+  <text x="660" y="322" fill="#166534" font-size="15" font-family="Segoe UI, Arial, sans-serif">Estimated optimization opportunity</text>
+
+  <rect x="920" y="214" width="260" height="126" rx="24" fill="#ffffff" stroke="#d9ecdf" stroke-width="2"/>
+  <text x="948" y="256" fill="#5b6c62" font-size="18" font-family="Segoe UI, Arial, sans-serif">Infra run rate</text>
+  <text x="948" y="296" fill="#10241a" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">$5.5M</text>
+  <text x="948" y="322" fill="#166534" font-size="15" font-family="Segoe UI, Arial, sans-serif">Annualized portfolio run rate</text>
+
+  <rect x="56" y="384" width="1168" height="316" rx="28" fill="#ffffff" stroke="#d9ecdf" stroke-width="2"/>
+  <text x="84" y="438" fill="#10241a" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">What this output shows</text>
+  <text x="84" y="482" fill="#5b6c62" font-size="20" font-family="Segoe UI, Arial, sans-serif">business-unit-17 is the highest-risk account with score 193.2, showing weak governance posture alongside an annualized run rate of $236.3K.</text>
+  <rect x="84" y="526" width="14" height="14" rx="7" fill="#16a34a"/>
+  <text x="110" y="540" fill="#10241a" font-size="18" font-family="Segoe UI, Arial, sans-serif">Generated from the repository's current exported outputs</text>
+  <rect x="84" y="572" width="520" height="88" rx="22" fill="#f5fbf7" stroke="#d9ecdf" stroke-width="1.5"/>
+  <text x="110" y="618" fill="#166534" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Decision-ready artifact pack</text>
+  <text x="110" y="646" fill="#5b6c62" font-size="18" font-family="Segoe UI, Arial, sans-serif">The same data behind the repo outputs is reused here for GitHub-native storytelling.</text>
+</svg>
