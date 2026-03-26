@@ -70,7 +70,3 @@ The Terraform stack provisions:
 - wire remediation recommendations into ticketing or platform backlog workflows
 - add trend persistence to compare governance posture month over month
 - expose selected KPI outputs through an API or semantic layer for executive dashboards
-
-## Automation Disclosure
-
-**Note:** This repository uses automation and AI assistance for planning, initial scaffolding, routine maintenance, and selected code or documentation generation. I review and curate the outputs as part of my portfolio workflow.
