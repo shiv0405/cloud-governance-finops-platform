@@ -2,27 +2,27 @@
 
 Production-oriented AWS governance and FinOps analytics project for cloud visibility, remediation planning, and reporting. It combines Terraform infrastructure, synthetic multi-account telemetry, account-level scorecards, remediation recommendations, and executive reporting into one cohesive operating model.
 
-## Overview
+## Operating Scope
 
 - Moves beyond infrastructure provisioning into governance, cost posture, and operating accountability
 - Produces actionable outputs for platform, security, and FinOps stakeholders
 - Includes a multi-account dataset with cost, utilization, tagging, backup, encryption, and exposure signals
 - Combines infrastructure, reporting, and remediation planning in one workflow
 
-## Visual Outputs
+## Scorecard Preview
 
 ![Cloud governance overview](docs/images/overview.svg)
 
 ![Cloud governance highlights](docs/images/highlights.svg)
 
-## Core Capabilities
+## Reporting Deliverables
 
 - Terraform foundation for a reporting lake, Athena workgroup, Glue catalog, encryption, and scheduled processing
 - Synthetic AWS inventory, cost usage, and security findings across multiple business-unit accounts
 - Account scorecards with governance, optimization, maturity, and risk measures
 - Portfolio KPI snapshot, executive brief, and remediation recommendation queue
 
-## Project Layout
+## Repository Contents
 
 - `terraform/` contains the AWS reporting foundation
 - `lambda/` contains the scheduled reporting Lambda handler
@@ -40,7 +40,7 @@ python -m pip install -e .
 cloud-governance-finops-platform run-all --accounts 24 --months 12 --resources-per-account 120
 ```
 
-## Outputs
+## Generated Reports
 
 After `run-all`, the project writes:
 
@@ -54,14 +54,14 @@ After `run-all`, the project writes:
 - `reports/executive_brief.md`
 - `reports/executive_summary.html`
 
-## Business Questions It Answers
+## Review Questions
 
 - Which accounts combine governance drift with meaningful spend and therefore need leadership attention?
 - Where is the clearest savings opportunity across low-utilization and weak tagging discipline?
 - Which issues belong with platform engineering versus security engineering versus FinOps?
 - How mature is the portfolio overall, and what would it take to improve it quarter over quarter?
 
-## Terraform Foundation
+## Infrastructure Baseline
 
 The Terraform stack provisions:
 
@@ -70,7 +70,7 @@ The Terraform stack provisions:
 - a scheduled Lambda function for report orchestration
 - CloudWatch logging and KMS-backed encryption defaults
 
-## Production Path
+## Implementation Path
 
 - replace synthetic inputs with CUR, Config, Security Hub, and inventory extracts
 - wire remediation recommendations into ticketing or platform backlog workflows
